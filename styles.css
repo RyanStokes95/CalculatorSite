@@ -13,9 +13,9 @@ body, html{
 
 #container{
     display: flex;
-    flex-direction: column;
     align-content: center;
-    min-height: 90%;
+    justify-content: center;
+    min-height: 83%;
 }
 
 #header{
@@ -30,6 +30,7 @@ body, html{
     border-color: rgb(255, 255, 255);
     border-left: 0;
     border-top: 0;
+    border-right: 0;
 }
 
 #heading{
@@ -143,6 +144,7 @@ body, html{
     border-color: rgb(255, 255, 255);
     border-left: 0;
     border-bottom: 0;
+    border-right: 0;
 }
 
 #footerContent{
