@@ -15,7 +15,7 @@ body, html{
     display: flex;
     align-content: center;
     justify-content: center;
-    min-height: 83%;
+    min-height: 84%;
 }
 
 #header{
@@ -40,8 +40,15 @@ body, html{
     -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
-#headingLogo{
-    margin-right: 30px;
+#headerLogo img{
+    margin-right: 20px;
+    width: 160px;
+    height: 40px;
+    padding: 5px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    
 }
 
 #calculatorContainer{
