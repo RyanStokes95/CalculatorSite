@@ -128,7 +128,7 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne + numberTwo
-                        screen.innerHTML = result
+                        screen.innerHTML = result.toFixed(10)
                     }
                     else{
                         result = parseFloat(screen.innerHTML)
@@ -165,6 +165,8 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne / numberTwo
+                        result = result.toFixed(10)
+                        console.log(result)
                         screen.innerHTML = result
                     }
                     else{
