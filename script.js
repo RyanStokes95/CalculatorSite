@@ -128,11 +128,21 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne + numberTwo
+                        result = result.toString()
+                        if(result.length > 13){
+                            alert("Number too big")
+                            clear()
+                        }
                         screen.innerHTML = result
                     }
                     else{
                         result = parseFloat(screen.innerHTML)
                         result += numberTwo
+                        result = result.toString()
+                        if(result.length > 13){
+                            alert("Number too big")
+                            clear()
+                        }
                         screen.innerHTML = result
                     }
                     
@@ -141,11 +151,19 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne - numberTwo
+                        result = result.toString()
+                        if(result.length > 13){
+                            result = result.substring(0, 13)
+                        }
                         screen.innerHTML = result
                     }
                     else{
                         result = parseFloat(screen.innerHTML)
                         result -= numberTwo
+                        result = result.toString()
+                        if(result.length > 13){
+                            result = result.substring(0, 13)
+                        }
                         screen.innerHTML = result
                     }
                 }
@@ -153,11 +171,21 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne * numberTwo
+                        result = result.toString()
+                         if(result.length > 13){
+                            alert("Number too big")
+                            clear()
+                        }
                         screen.innerHTML = result
                     }
                     else{
                         result = parseFloat(screen.innerHTML)
                         result *= numberTwo
+                        result = result.toString()
+                         if(result.length > 13){
+                            alert("Number too big")
+                            clear()
+                        }
                         screen.innerHTML = result
                     }
                 }
@@ -165,12 +193,19 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne / numberTwo
+                        result = result.toString()
+                        if(result.length > 13){
+                            result = result.substring(0, 13)
+                        }
                         screen.innerHTML = result
                     }
                     else{
                         result = parseFloat(screen.innerHTML)
                         result /= numberTwo
-                        result = result.toFixed(10)
+                        result = result.toString()
+                        if(result.length > 13){
+                            result = result.substring(0, 13)
+                        }
                         screen.innerHTML = result
                     }
                 }
