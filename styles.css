@@ -3,7 +3,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body, html{
+body, 
+html{
     margin: 0;
     background-image: url(images/stacked-waves-haikei.png);
     background-repeat: no-repeat;
@@ -105,6 +106,16 @@ body, html{
     
 }
 
+.numberBtn:hover, 
+#equals:hover{
+    background-color: rgb(143, 146, 149);
+}
+
+.numberBtn:active, 
+#equals:active{
+    border-color: rgb(234, 160, 96);
+}
+
 #clear{
     margin-top: 30px;
     height: 50px;
@@ -118,13 +129,24 @@ body, html{
     font-weight: 1000;
 }
 
+#clear:hover{
+    background-color: rgb(182, 113, 52);
+}
+
+#clear:active{
+    border-color: rgb(255, 255, 255);
+}
+
 #operatorInput{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
 }
 
-#plus, #minus, #multiply, #divide{
+#plus, 
+#minus, 
+#multiply, 
+#divide{
     background-color: rgb(173, 20, 20);
     color: rgb(255, 255, 255);
     border-style: solid;
@@ -138,6 +160,21 @@ body, html{
     font-size: 20px;
     font-weight: 1000;
 }
+
+#plus:hover, 
+#minus:hover, 
+#multiply:hover, 
+#divide:hover{
+    background-color: rgb(217, 66, 66);
+}
+
+#plus:active, 
+#minus:active, 
+#multiply:active, 
+#divide:active{
+    border-color: rgb(0, 0, 0);
+}
+
 
 #footer{
     display: flex;
