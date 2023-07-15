@@ -128,13 +128,11 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne + numberTwo
-                        result = result.toFixed(10)
                         screen.innerHTML = result
                     }
                     else{
                         result = parseFloat(screen.innerHTML)
                         result += numberTwo
-                        result = result.toFixed(10)
                         screen.innerHTML = result
                     }
                     
@@ -143,13 +141,11 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne - numberTwo
-                        result = result.toFixed(10)
                         screen.innerHTML = result
                     }
                     else{
                         result = parseFloat(screen.innerHTML)
                         result -= numberTwo
-                        result = result.toFixed(10)
                         screen.innerHTML = result
                     }
                 }
@@ -157,13 +153,11 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne * numberTwo
-                        result = result.toFixed(10)
                         screen.innerHTML = result
                     }
                     else{
                         result = parseFloat(screen.innerHTML)
                         result *= numberTwo
-                        result = result.toFixed(10)
                         screen.innerHTML = result
                     }
                 }
@@ -171,7 +165,6 @@ function equalsSetUp(){
                     if (result == null) {
                         numberTwo = parseFloat(screen.innerHTML)
                         result = numberOne / numberTwo
-                        result = result.toFixed(10)
                         screen.innerHTML = result
                     }
                     else{
